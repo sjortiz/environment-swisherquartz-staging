@@ -22,3 +22,6 @@ jenkins:
       EnvVars:
         TILLER_NAMESPACE: kube-system
 prow: {}
+expose:
+  config:
+    urltemplate: "{{.Service}}-{{.Namespace}}.{{.Domain}}"
